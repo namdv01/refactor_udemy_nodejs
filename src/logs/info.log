@@ -1,0 +1,1059 @@
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'b87d1378-0eed-4f8d-aaff-34e653d8d89e',
+        host: 'localhost:3002',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '55',
+        cookie: 'udemy_express=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWFpbCI6Im5hbWR2IiwiaWF0IjoxNzAyMjY4NTc1fQ.kv_KGFbGwCbu1w1J4Uh6Fdha6dNoZiRxyJ0f9VYMzFM'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv', password: 'Ssv@1234567' }
+    },
+    res: { statusCode: 401, body: 'Thông tin đăng nhập không chính xác!!!' },
+    responseTime: 177
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T04:31:00.704Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'dc803e95-d45e-42ca-904a-4caee6bb479a',
+        host: 'localhost:3002',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '56',
+        cookie: 'udemy_express=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWFpbCI6Im5hbWR2IiwiaWF0IjoxNzAyMjY4NTc1fQ.kv_KGFbGwCbu1w1J4Uh6Fdha6dNoZiRxyJ0f9VYMzFM'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail1: 'namdv', password: 'Ssv@1234567' }
+    },
+    res: { statusCode: 500, body: 'Server lỗi' },
+    responseTime: 18
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T04:31:17.438Z'
+}
+{
+  meta: {
+    req: {
+      url: '/socket.io/?EIO=4&transport=websocket',
+      headers: {
+        'sec-websocket-version': '13',
+        'sec-websocket-key': '9ywLsg8osr7eE9XRTp6D/Q==',
+        connection: 'Upgrade',
+        upgrade: 'websocket',
+        'sec-websocket-extensions': 'permessage-deflate; client_max_window_bits',
+        host: 'localhost:3002'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/socket.io/?EIO=4&transport=websocket',
+      query: { EIO: '4', transport: 'websocket' }
+    },
+    res: {
+      statusCode: 404,
+      body: '<!DOCTYPE html>\n' +
+        '<html lang="en">\n' +
+        '<head>\n' +
+        '<meta charset="utf-8">\n' +
+        '<title>Error</title>\n' +
+        '</head>\n' +
+        '<body>\n' +
+        '<pre>Cannot GET /socket.io/</pre>\n' +
+        '</body>\n' +
+        '</html>\n'
+    },
+    responseTime: 4
+  },
+  level: 'info',
+  message: 'HTTP GET /socket.io/?EIO=4&transport=websocket',
+  timestamp: '2023-12-11T04:39:30.152Z'
+}
+{
+  meta: {
+    req: {
+      url: '/graphql',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '1adcbd60-2996-4e41-94f9-39073166d593',
+        host: 'localhost:3002',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '43',
+        cookie: 'udemy_express=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWFpbCI6Im5hbWR2IiwiaWF0IjoxNzAyMjY4NTc1fQ.kv_KGFbGwCbu1w1J4Uh6Fdha6dNoZiRxyJ0f9VYMzFM'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/graphql',
+      query: {},
+      body: { query: 'query {users {id name}' }
+    },
+    res: {
+      statusCode: 200,
+      body: {
+        errors: [
+          {
+            message: 'Syntax Error: Expected Name, found <EOF>.',
+            locations: [ { line: 1, column: 23 } ]
+          }
+        ]
+      }
+    },
+    responseTime: 110
+  },
+  level: 'info',
+  message: 'HTTP POST /graphql',
+  timestamp: '2023-12-11T07:03:33.377Z'
+}
+{
+  meta: {
+    req: {
+      url: '/graphql',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '1866e525-b95f-48ce-82a0-d439f580a356',
+        host: 'localhost:3002',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '44',
+        cookie: 'udemy_express=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWFpbCI6Im5hbWR2IiwiaWF0IjoxNzAyMjY4NTc1fQ.kv_KGFbGwCbu1w1J4Uh6Fdha6dNoZiRxyJ0f9VYMzFM'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/graphql',
+      query: {},
+      body: { query: 'query {users {id name}}' }
+    },
+    res: { statusCode: 200, body: { data: { users: null } } },
+    responseTime: 15
+  },
+  level: 'info',
+  message: 'HTTP POST /graphql',
+  timestamp: '2023-12-11T07:04:21.621Z'
+}
+{
+  meta: {
+    req: {
+      url: '/graphql',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'a068de77-cfa7-48b6-8b2d-72cbd4d85bf6',
+        host: 'localhost:3002',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '45',
+        cookie: 'udemy_express=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWFpbCI6Im5hbWR2IiwiaWF0IjoxNzAyMjY4NTc1fQ.kv_KGFbGwCbu1w1J4Uh6Fdha6dNoZiRxyJ0f9VYMzFM'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/graphql',
+      query: {},
+      body: { query: 'query {posts {id title}}' }
+    },
+    res: {
+      statusCode: 200,
+      body: {
+        data: { posts: [ { id: '1', title: 'tiêu đề' } ] }
+      }
+    },
+    responseTime: 4
+  },
+  level: 'info',
+  message: 'HTTP POST /graphql',
+  timestamp: '2023-12-11T07:04:37.219Z'
+}
+{
+  meta: {
+    req: {
+      url: '/graphql',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '08d943f8-3d99-4f10-84d1-2a77bf805ce1',
+        host: 'localhost:3002',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '52',
+        cookie: 'udemy_express=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWFpbCI6Im5hbWR2IiwiaWF0IjoxNzAyMjY4NTc1fQ.kv_KGFbGwCbu1w1J4Uh6Fdha6dNoZiRxyJ0f9VYMzFM'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/graphql',
+      query: {},
+      body: { query: 'query {posts {id title author}}' }
+    },
+    res: {
+      statusCode: 200,
+      body: {
+        errors: [
+          {
+            message: 'Field "author" of type "UserCore" must have a selection of subfields. Did you mean "author { ... }"?',
+            locations: [ { line: 1, column: 24 } ]
+          }
+        ]
+      }
+    },
+    responseTime: 30
+  },
+  level: 'info',
+  message: 'HTTP POST /graphql',
+  timestamp: '2023-12-11T07:19:53.635Z'
+}
+{
+  meta: {
+    req: {
+      url: '/graphql',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '67934497-bfce-480b-af79-b733aba6d408',
+        host: 'localhost:3002',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '59',
+        cookie: 'udemy_express=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWFpbCI6Im5hbWR2IiwiaWF0IjoxNzAyMjY4NTc1fQ.kv_KGFbGwCbu1w1J4Uh6Fdha6dNoZiRxyJ0f9VYMzFM'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/graphql',
+      query: {},
+      body: { query: 'query {posts {id title author {name}}}' }
+    },
+    res: {
+      statusCode: 200,
+      body: {
+        data: {
+          posts: [ { id: '1', title: 'tiêu đề', author: { name: 'namdv' } } ]
+        }
+      }
+    },
+    responseTime: 13
+  },
+  level: 'info',
+  message: 'HTTP POST /graphql',
+  timestamp: '2023-12-11T07:20:07.166Z'
+}
+{
+  meta: {
+    req: {
+      url: '/graphql',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '96b5bf27-5bb0-4496-9f53-d01ad0d49be3',
+        host: 'localhost:3002',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '56',
+        cookie: 'udemy_express=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWFpbCI6Im5hbWR2IiwiaWF0IjoxNzAyMjY4NTc1fQ.kv_KGFbGwCbu1w1J4Uh6Fdha6dNoZiRxyJ0f9VYMzFM'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/graphql',
+      query: {},
+      body: { query: 'query {posts {id title author {*}}}' }
+    },
+    res: {
+      statusCode: 200,
+      body: {
+        errors: [
+          {
+            message: 'Syntax Error: Unexpected character: "*".',
+            locations: [ { line: 1, column: 32 } ]
+          }
+        ]
+      }
+    },
+    responseTime: 2
+  },
+  level: 'info',
+  message: 'HTTP POST /graphql',
+  timestamp: '2023-12-11T07:20:13.808Z'
+}
+{
+  meta: {
+    req: {
+      url: '/graphql',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '369e537e-5869-466d-9b90-0c257a3b2e88',
+        host: 'localhost:3002',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '55',
+        cookie: 'udemy_express=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWFpbCI6Im5hbWR2IiwiaWF0IjoxNzAyMjY4NTc1fQ.kv_KGFbGwCbu1w1J4Uh6Fdha6dNoZiRxyJ0f9VYMzFM'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/graphql',
+      query: {},
+      body: { query: 'query {posts {id title author {}}}' }
+    },
+    res: {
+      statusCode: 200,
+      body: {
+        errors: [
+          {
+            message: 'Syntax Error: Expected Name, found "}".',
+            locations: [ { line: 1, column: 32 } ]
+          }
+        ]
+      }
+    },
+    responseTime: 2
+  },
+  level: 'info',
+  message: 'HTTP POST /graphql',
+  timestamp: '2023-12-11T07:20:17.919Z'
+}
+{
+  meta: {
+    req: {
+      url: '/graphql',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '1fbb268b-4d9f-460b-9f5a-2ba0ecbd7fb8',
+        host: 'localhost:3002',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '64',
+        cookie: 'udemy_express=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWFpbCI6Im5hbWR2IiwiaWF0IjoxNzAyMjY4NTc1fQ.kv_KGFbGwCbu1w1J4Uh6Fdha6dNoZiRxyJ0f9VYMzFM'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/graphql',
+      query: {},
+      body: { query: 'query {posts {id title author {name info}}}' }
+    },
+    res: {
+      statusCode: 200,
+      body: {
+        data: {
+          posts: [
+            {
+              id: '1',
+              title: 'tiêu đề',
+              author: { name: 'namdv', info: 'fb/namdv' }
+            }
+          ]
+        }
+      }
+    },
+    responseTime: 7
+  },
+  level: 'info',
+  message: 'HTTP POST /graphql',
+  timestamp: '2023-12-11T07:20:24.361Z'
+}
+{
+  meta: {
+    req: {
+      url: '/graphql',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': 'bfdf789d-cedf-4f6c-b942-10e083a878b6',
+        host: 'localhost:3002',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '77',
+        cookie: 'udemy_express=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWFpbCI6Im5hbWR2IiwiaWF0IjoxNzAyMjY4NTc1fQ.kv_KGFbGwCbu1w1J4Uh6Fdha6dNoZiRxyJ0f9VYMzFM'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/graphql',
+      query: {},
+      body: {
+        query: 'query {posts {id title author {name info}} users {name}}'
+      }
+    },
+    res: {
+      statusCode: 200,
+      body: {
+        data: {
+          posts: [
+            {
+              id: '1',
+              title: 'tiêu đề',
+              author: { name: 'namdv', info: 'fb/namdv' }
+            }
+          ],
+          users: [ { name: 'namdv' } ]
+        }
+      }
+    },
+    responseTime: 6
+  },
+  level: 'info',
+  message: 'HTTP POST /graphql',
+  timestamp: '2023-12-11T07:22:00.748Z'
+}
+{
+  meta: {
+    req: {
+      url: '/graphql',
+      headers: {
+        'content-type': 'application/json',
+        'user-agent': 'PostmanRuntime/7.35.0',
+        accept: '*/*',
+        'cache-control': 'no-cache',
+        'postman-token': '94bd310a-908e-4833-a684-1bd2ae978466',
+        host: 'localhost:3002',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '91',
+        cookie: 'udemy_express=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibWFpbCI6Im5hbWR2IiwiaWF0IjoxNzAyMjY4NTc1fQ.kv_KGFbGwCbu1w1J4Uh6Fdha6dNoZiRxyJ0f9VYMzFM'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/graphql',
+      query: {},
+      body: {
+        query: 'query {posts {id title author {name info}} users {name posts {title}}}'
+      }
+    },
+    res: {
+      statusCode: 200,
+      body: {
+        data: {
+          posts: [
+            {
+              id: '1',
+              title: 'tiêu đề',
+              author: { name: 'namdv', info: 'fb/namdv' }
+            }
+          ],
+          users: [
+            { name: 'namdv', posts: [ { title: 'tiêu đề' } ] }
+          ]
+        }
+      }
+    },
+    responseTime: 6
+  },
+  level: 'info',
+  message: 'HTTP POST /graphql',
+  timestamp: '2023-12-11T07:22:11.588Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:64105',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '44',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { username: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 500, body: 'Server lỗi' },
+    responseTime: 542
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T07:35:47.686Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:64131',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '40',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 200, body: 'Đăng nhập thành công' },
+    responseTime: 257
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T07:36:32.924Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:64142',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '40',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 200, body: 'Đăng nhập thành công' },
+    responseTime: 274
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T07:36:58.108Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:3002',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '40',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 200, body: 'Đăng nhập thành công' },
+    responseTime: 232
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T07:37:19.400Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:3002',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '40',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 200, body: 'Đăng nhập thành công' },
+    responseTime: 266
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T07:37:54.034Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:3002',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '40',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 200, body: 'Đăng nhập thành công' },
+    responseTime: 223
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T07:38:25.382Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:3002',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '40',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 200, body: 'Đăng nhập thành công' },
+    responseTime: 294
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T07:39:16.781Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:64312',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '40',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 200, body: 'Đăng nhập thành công' },
+    responseTime: 198
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T07:43:44.747Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:64344',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '40',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 200, body: 'Đăng nhập thành công' },
+    responseTime: 251
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T07:45:40.257Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:65309',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '40',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 200, body: 'Đăng nhập thành công' },
+    responseTime: 208
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T07:57:54.731Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:65330',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '40',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 200, body: 'Đăng nhập thành công' },
+    responseTime: 374
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T07:58:15.593Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:49594',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '40',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 200, body: 'Đăng nhập thành công' },
+    responseTime: 218
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T08:08:30.815Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:49617',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '40',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 200, body: 'Đăng nhập thành công' },
+    responseTime: 212
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T08:08:59.834Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:49711',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '44',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { username: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 500, body: 'Server lỗi' },
+    responseTime: 130
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T08:11:05.418Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:49716',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '45',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { username: 'namdv1', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 500, body: 'Server lỗi' },
+    responseTime: 22
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T08:11:05.485Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:49768',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '44',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { username: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 500, body: 'Server lỗi' },
+    responseTime: 127
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T08:12:37.927Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:49772',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '45',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { username: 'namdv1', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 500, body: 'Server lỗi' },
+    responseTime: 17
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T08:12:37.971Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:49797',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '40',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 200, body: 'Đăng nhập thành công' },
+    responseTime: 242
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T08:13:16.763Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:49801',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '41',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv1', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 401, body: 'Thông tin đăng nhập không chính xác!!!' },
+    responseTime: 22
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T08:13:16.805Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:49846',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '40',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 200, body: 'Đăng nhập thành công' },
+    responseTime: 240
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T08:14:34.653Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:49851',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '41',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv1', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 401, body: 'Thông tin đăng nhập không chính xác!!!' },
+    responseTime: 19
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T08:14:34.700Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:49964',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '40',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 200, body: 'Đăng nhập thành công' },
+    responseTime: 210
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T08:16:30.119Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:49968',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '41',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail: 'namdv1', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 401, body: 'Thông tin đăng nhập không chính xác!!!' },
+    responseTime: 21
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T08:16:30.161Z'
+}
+{
+  meta: {
+    req: {
+      url: '/user/login',
+      headers: {
+        host: '127.0.0.1:49971',
+        'accept-encoding': 'gzip, deflate',
+        'content-type': 'application/json',
+        'content-length': '42',
+        connection: 'close'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/user/login',
+      query: {},
+      body: { mail1: 'namdv1', password: 'Ssv@123456' }
+    },
+    res: { statusCode: 500, body: 'Server lỗi' },
+    responseTime: 27
+  },
+  level: 'info',
+  message: 'HTTP POST /user/login',
+  timestamp: '2023-12-11T08:16:30.206Z'
+}

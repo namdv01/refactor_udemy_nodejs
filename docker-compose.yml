@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  node-posgres:
+    image: postgres:15
+    container_name: node-postgres
+    ports:
+      - 3107:5432
+    environment:
+      - POSTGRES_DB=nodejs
+      - POSTGRES_USER=namdv
+      - POSTGRES_PASSWORD=Ssv@123456
+  node-redis:
+    image: redis:7.2
+    container_name: node-redis
+    ports:
+      - 3108:6379
