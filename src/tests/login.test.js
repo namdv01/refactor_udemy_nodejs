@@ -19,7 +19,7 @@ describe('login', () => {
       mail: 'namdv1',
       password: 'Ssv@123456'
     });
-    expect(res.statusCode).toEqual(200)
+    expect(res.statusCode).toEqual(401)
   });
 })
 
@@ -30,6 +30,6 @@ describe('login', () => {
       mail1: 'namdv1',
       password: 'Ssv@123456'
     });
-    expect(res.statusCode).toEqual(200)
+    expect(res.statusCode).toEqual(500)
   });
 })

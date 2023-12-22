@@ -3,7 +3,6 @@ const socket = (host) => {
   const server = io(host);
   server.on('connect', (client) => {
     console.log(client.id);
-
     client.on('join', (payload, ack) => {
       client.join(payload.roomId);
       const rooms = server.of('/').adapter.rooms;
@@ -13,7 +12,6 @@ const socket = (host) => {
         server.to(payload.roomId).emit('mes', payload.mes);
       }
     });
-
     client.on('disconnect');
   });
 

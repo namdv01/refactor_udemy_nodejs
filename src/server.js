@@ -17,10 +17,11 @@ app.use(express.json());
 routes(app);
 
 const port = process.env.APP_PORT || 3006;
-// const server = require('http').createServer(app);
-// socket(server);
+const server = require('http').createServer(app);
+socket(server);
 
-app.listen(port, () => {
+server.listen(port, () => {
   console.log(`app be start at ${port}`);
 });
+
 module.exports = app;
