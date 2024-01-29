@@ -56,6 +56,10 @@ class UserController {
     res.clearCookie('udemy_express');
     return res.send(MESSAGE.LOGOUT_SUCCESS);
   }
+
+  async checkLogin(req, res) {
+    return res.send('check login success');
+  }
 }
 
 module.exports = new UserController();

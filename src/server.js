@@ -1,5 +1,7 @@
 const express = require('express');
 const expressWinston = require('express-winston');
+const cookieParser = require('cookie-parser');
+
 // catch error finally
 require('express-async-errors');
 const app = express();
@@ -14,6 +16,7 @@ expressWinston.requestWhitelist.push('body');
 expressWinston.responseWhitelist.push('body');
 // read req.body
 app.use(express.json());
+app.use(cookieParser());
 routes(app);
 
 const port = process.env.APP_PORT || 3006;

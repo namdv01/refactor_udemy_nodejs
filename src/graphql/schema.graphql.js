@@ -153,7 +153,7 @@ const RootMutation = new GraphQLObjectType({
       }
     }
   }
-})
+});
 
 module.exports = {
   RootType,
