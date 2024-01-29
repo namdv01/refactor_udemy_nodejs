@@ -1,0 +1,25 @@
+queryGraphQL json: {
+    "query": "mutation($id: ID) {post(id: $id){find{title}}}",
+    "variables": {
+        "id": 1
+    }
+}
+
+
+1- Hiểu về các nội dung đã được mô tả trong khoá học
+2- Giải thích về event-loop và các giai đoạn của event-loop
+3- Demo về bài tập ghi log request, response bằng cách sử dụng middleware trong ExpressJS
+4- Demo về việc sử dụng middleware để check JWT Tokens có hợp lệ hay không ?
+5- Demo 3 trường hợp unit test khác nhau ( có trường hợp thành công, lỗi, exception ) bằng supertest
+6- Demo cách sử dụng pm2, và giải thích các tham số sử dụng
+7- Demo về cách sử dụng Dotenv
+8- Demo về CRUD sử dụng GraphQL. So sánh với Rest API
+9- Demo về sử dụng socket
+
+
+2.event-loop là cơ chế xử lý sự kiện các thao tác không đồng bộ mà không làm chương trình bị chặn
+Quá trình chạy:
++ sự kiện đồng bộ được chạy đầu tiên và không ảnh hưởng bới event-loop
++ các sự kiện bất đồng bộ sẽ được đưa vào 1 queue sau đó khi được thực thi lấy trong queue này ra để thực thi lần lượt
++ event loop sẽ kiểm tra queue này xem thứ tự các hàm rồi thực thi lần lượt, mỗi lần sẽ thực thi 1 callback, cái nào đến timer sẽ thực hiện
+

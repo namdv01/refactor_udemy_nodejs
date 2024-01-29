@@ -83,6 +83,79 @@ const RootType = new GraphQLObjectType({
   }
 });
 
+const PostMutation = new GraphQLObjectType({
+  name: 'PostMutation',
+  fields: {
+    find: {
+      type: PostType,
+      args: {
+        id: { type: GraphQLID },
+      },
+      resolve: async (parent, args) => {
+        const posts = await resolverGraphql.getPosts();
+        return posts.find(p => +p.id === +parent.id);
+      }
+    },
+    create: {
+      type: PostType,
+      args: {
+        id: { type: GraphQLID },
+        idAuthor: { type: GraphQLID },
+        title: { type: GraphQLString },
+        body: { type: GraphQLString },
+      },
+      resolve: async (args) => {
+        const posts = await resolverGraphql.getPosts();
+        await resolverGraphql.createPost(posts, args);
+        return true;
+      }
+    },
+    delete: {
+      type: PostType,
+      args: {
+        id: { type: GraphQLID },
+      },
+      resolve: async (args) => {
+        const posts = await resolverGraphql.getPosts();
+        await resolverGraphql.delPost(posts, args);
+        return true;
+      }
+    },
+    update: {
+      type: PostType,
+      args: {
+        id: { type: GraphQLID },
+        title: { type: GraphQLString },
+        body: { type: GraphQLString },
+      },
+      resolve: async (args) => {
+        const posts = await resolverGraphql.getPosts();
+        await resolverGraphql.updatePost(posts, args);
+        return true;
+      }
+    }
+  }
+});
+
+const RootMutation = new GraphQLObjectType({
+  name: 'RootMutation',
+  fields: {
+    post: {
+      type: PostMutation,
+      args: {
+        id: { type: GraphQLID },
+        title: { type: GraphQLString },
+        body: { type: GraphQLString },
+        idAuthor: { type: GraphQLID }
+      },
+      resolve: (parent, args) => {
+        return args;
+      }
+    }
+  }
+})
+
 module.exports = {
-  RootType
+  RootType,
+  RootMutation,
 }

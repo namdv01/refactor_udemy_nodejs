@@ -6,7 +6,10 @@
   "scripts": {
     "test": "jest --runInBand --force-exit",
     "dev": "nodemon src/server.js",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "start-pm2": "pm2 start src/server.js --watch --name udemy-nodejs",
+    "stop-pm2": "pm2 stop udemy-nodejs",
+    "del-pm2": "pm2 delete udemy-nodejs"
   },
   "keywords": [],
   "author": "",
